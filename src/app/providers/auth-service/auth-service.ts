@@ -131,7 +131,7 @@ export class AuthService {
     const userRef: AngularFirestoreDocument<any> = this.afs.doc(`users/${user.uid}`);
 
     // todo: ENSURE everywhere plz is number
-    // @ts-ignore
+    // @ts-ignore\
     plz = parseInt(plz);
 
     let userData: User = {
